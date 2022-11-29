@@ -1,53 +1,26 @@
-VALUES = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-COLOURS = {0: '\033[0m', 1: '\033[32m', 2: '\033[33m', 3: '\033[31m', 4: '\033[0m', 5: '\033[0m', 6: '\033[0m',
-           7: '\033[0m', 8: '\033[0m', 9: '\033[0m'}
 import time
 from collections import Counter
 import copy
+
+VALUES = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+COLOURS = {0: '\033[0m', 1: '\033[32m', 2: '\033[33m', 3: '\033[31m', 4: '\033[0m', 5: '\033[0m', 6: '\033[0m',
+           7: '\033[0m', 8: '\033[0m', 9: '\033[0m'}
 
 
 # ----- main solution -----
 
 def solve_sudoku(input):
+    if is_solved(input):
+        return input
     cell_i, cell_j, min_possible_values, values = find_the_best_cell(input)
-    if min_possible_values == 1:
-        input[cell_i][cell_j] = values.pop()
-        solve_sudoku(input)
+    for value in values:
+        if is_valid(input, value, cell_i, cell_j):
+            input[cell_i][cell_j] = value
+            solution = solve_sudoku(input)
+            if is_solved(solution):
+                return solution
+            input[cell_i][cell_j] = '*'
     return input
-
-
-def solve_sudoku_2(input):
-    for value in VALUES:
-        for i in range(9):
-            for j in range(9):
-                if input[i][j] == '*':
-                    if is_valid(input, value, i, j):
-                        input[i][j] = value
-                        solve_sudoku_2(input)
-    return input
-
-
-def solve_sudoku_3(input):
-    for i in range(9):
-        for j in range(9):
-            if input[i][j] == '*':
-                quadrant = get_quadrant(i, j, input)
-                row = input[i]
-                column = list(zip(*input))[j]
-                possible_values = set(VALUES) - set(quadrant) - set(row) - set(column)
-                for value in possible_values:
-                    if is_valid(input, value, i, j):
-                        input[i][j] = value
-                        solve_sudoku_3(input)
-    return input
-
-
-def solve_sudoku_4(input):
-    cell_i, cell_j, min_possible_values, values = find_the_best_cell(input)
-    while not is_solved(input) and values:
-        input[cell_i][cell_j] = values.pop()
-        solve_sudoku_4(input)
-    return solve_sudoku(input)
 
 
 # ----- tools -----
@@ -67,38 +40,26 @@ def count_possible_values(input, i, j):
 
 
 def find_the_best_cell(input):
+    min_possible_values = 10
     cell_i = 0
     cell_j = 0
-    min_possible_values = 9
-    values = {'*'}
-    for i in range(9):
-        for j in range(9):
+    values = []
+    for i in range(len(input)):
+        for j in range(len(input[0])):
             if input[i][j] == '*':
-                quadrant = get_quadrant(i, j, input)
-                row = input[i]
-                column = list(zip(*input))[j]
-                possible_values = set(VALUES) - set(quadrant) - set(row) - set(column)
+                possible_values = set(VALUES) \
+                                  - set(get_quadrant(i, j, input)) \
+                                  - set(input[i]) \
+                                  - set(list(zip(*input))[j])
                 if len(possible_values) < min_possible_values:
+                    min_possible_values = len(possible_values)
                     cell_i = i
                     cell_j = j
-                    min_possible_values = len(possible_values)
                     values = possible_values
     return cell_i, cell_j, min_possible_values, values
 
 
 # ----- output -----
-
-def print_sudoku(input):
-    for i in range(9):
-        if i % 3 == 0:
-            print('-------------------------')
-        for j in range(len(input[0])):
-            if j % 3 == 0:
-                print('|', end=' ')
-            print(input[i][j], end=' ')
-        print('|')
-    print('-------------------------')
-
 
 def smart_print(input):
     for i in range(9):
@@ -115,13 +76,8 @@ def smart_print(input):
     print('-------------------------')
 
 
-def print_matrix(matrix):
-    for line in matrix:
-        print(line)
-    print('\n')
-
-
 # ----- tests -----
+
 
 def is_valid(input, value, i, j):
     quadrant = get_quadrant(i, j, input)
@@ -158,18 +114,9 @@ with open('sudoku.txt') as sudoku:
     input = [list(line.strip()) for line in sudoku]
 smart_print(input)
 input_1 = copy.deepcopy(input)
-input_2 = copy.deepcopy(input)
-input_3 = copy.deepcopy(input)
-input_4 = copy.deepcopy(input)
 print('Solution:')
 smart_print(solve_sudoku(input_1))
-print('Solution:')
-smart_print(solve_sudoku_2(input_2))
-print('Solution:')
-smart_print(solve_sudoku_3(input_3))
-print('Solution:')
-smart_print(solve_sudoku_4(input_4))
 end = time.time()
-# if is_solved(solve_sudoku(input)) and is_correct(solve_sudoku(input)):
-#     print('Tests passed 100%')
+if is_solved(solve_sudoku(input)) and is_correct(solve_sudoku(input)):
+    print('Tests passed 100%')
 print('Elapsed time:', round((end - start) * 1000, 2), 'ms')
