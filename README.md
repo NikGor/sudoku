@@ -57,11 +57,11 @@ the result will be printed using a 3x3 grid format:
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/VK7EcC6sKUNtaVCBua9TOop7L.svg)](https://asciinema.org/a/VK7EcC6sKUNtaVCBua9TOop7L)
+[![asciicast](https://asciinema.org/a/jfJZZ07yPQeqIgeWdNbIpDts3.svg)](https://asciinema.org/a/jfJZZ07yPQeqIgeWdNbIpDts3)
 
 
 ## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details
 
-
+![example workflow](https://github.com/NikGor/sudoku/actions/workflows/main.yml/badge.svg)
