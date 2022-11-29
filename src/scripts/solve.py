@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
+import time  # import the time module to measure the time it takes to solve the sudoku
 from src.main import solve_sudoku  # import the function to solve the sudoku
 from src.output import smart_print  # import the function to print the sudoku
-import time  # import the time module to measure the time it takes to solve the sudoku
 
 
 def main():

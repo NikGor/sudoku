@@ -1,4 +1,4 @@
-from main import VALUES  # import the list of possible values from '1' to '9'
+VALUES = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  # list of possible values
 
 
 def get_quadrant(i, j, arr):  # get the quadrant of a cell

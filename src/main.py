@@ -1,6 +1,4 @@
-from tools import find_the_best_cell, get_quadrant
-
-VALUES = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  # list of possible values
+from src.tools import find_the_best_cell, get_quadrant
 
 
 # ----- main solution -----

@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffb80fb6-cc33-4596-b065-20e4d6470eac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/solve.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/empty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/expert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/hard" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/light" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/middle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/fixtures/nightmare" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_sudoku.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sudoku.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sudoku.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/sudoku.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/solve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_sudoku.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,8 +107,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.solve" />
         <item itemvalue="Python tests.Python tests for test_sudoku.test_is_solved" />
+        <item itemvalue="Python.solve" />
       </list>
     </recent_temporary>
   </component>

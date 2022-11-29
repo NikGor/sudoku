@@ -6,7 +6,7 @@ from collections import Counter
 
 @pytest.fixture
 def solution():
-    with open('tests/fixtures/light') as f:  # open the file with the sudoku
+    with open('src/tests/fixtures/light') as f:  # open the file with the sudoku
         return [list(line.strip()) for line in f.readlines()]
 
 
