@@ -3,6 +3,7 @@ import time  # import the time module to measure the time it takes to solve the 
 from src.main import solve_sudoku  # import the function to solve the sudoku
 from src.output import smart_print  # import the function to print the sudoku
 from src.cli import parse_args  # import the function to parse the arguments from the command line
+from src.tools import normalize_file_name  # import the function to normalize the file name
 
 
 def main():

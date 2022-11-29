@@ -15,3 +15,6 @@ build:
 
 package-install:
 	python3 -m pip install --user dist/*.whl --force-reinstall
+
+test-coverage:
+	poetry run pytest --cov

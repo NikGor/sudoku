@@ -1,15 +1,14 @@
 import pytest
-
 from src.main import solve_sudoku, is_solved
 from collections import Counter
-
-from src.tools import get_quadrant
+from src.tools import get_quadrant, normalize_file_name
 
 
 @pytest.fixture
 def task():
-    with open('fixtures/light') as f:  # open the file with the sudoku
-        return [list(line.strip()) for line in f.readlines()]
+    filename = normalize_file_name('tests/fixtures/light') # get the file name
+    with open(filename) as f:  # open the file with the sudoku
+        return [list(line.strip()) for line in f.readlines()] # return the sudoku
 
 
 def test_is_solved(task):
