@@ -17,7 +17,7 @@ def solve_sudoku(task):
     return task
 
 
-# ----- checks
+# ----- checks -----
 
 # check if a value is valid in a cell
 def is_valid(task, value, i, j):
