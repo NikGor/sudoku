@@ -14,7 +14,7 @@ The program will prompt you to enter the sudoku puzzle.
 The puzzle should be entered as a single line of 81 characters, with '*' representing an empty cell. 
 divided into 9 rows of 9 characters each.
 For example, the following puzzle:
-    
+
 ```bash
 5*3****7*
 *1*3*98**

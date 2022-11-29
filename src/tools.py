@@ -1,4 +1,5 @@
 import os
+
 VALUES = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  # list of possible values
 
 
@@ -36,6 +37,5 @@ def find_the_best_cell(task):  # find the cell with the least possible values
     return cell_i, cell_j, min_possible_values, values  # return the cell's coordinates and the possible values
 
 
-def normalize_file_name(arg):
-    basedir, _ = os.path.split(os.path.abspath(os.getcwd()))
-    return os.path.join(basedir, os.path.normpath(arg))
+def normalize_file_name(arg):  # normalize the file name for the current OS
+    return arg.replace('/', os.sep).replace('\\', os.sep)
