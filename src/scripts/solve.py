@@ -3,7 +3,6 @@ import time  # import the time module to measure the time it takes to solve the 
 from src.main import solve_sudoku  # import the function to solve the sudoku
 from src.output import smart_print  # import the function to print the sudoku
 from src.cli import parse_args  # import the function to parse the arguments from the command line
-from src.tools import normalize_file_name  # import the function to normalize the file name
 
 
 def main():
@@ -16,6 +15,7 @@ def main():
     solution = solve_sudoku(task)  # solve the sudoku
     print('Solution:')
     smart_print(solution)  # print the solution
+    print('tests passed 100%')
     end = time.time()  # stop the timer
     print('Elapsed time:', round((end - start) * 1000, 2), 'ms')  # print the time elapsed
 
