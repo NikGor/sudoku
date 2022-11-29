@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ffb80fb6-cc33-4596-b065-20e4d6470eac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/solve.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_sudoku.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_sudoku.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +91,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_sudoku.test_is_correct" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="sudoku" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_sudoku.test_is_correct&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_sudoku.test_is_solved" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="sudoku" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,8 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_sudoku.test_is_solved" />
         <item itemvalue="Python.solve" />
+        <item itemvalue="Python tests.Python tests for test_sudoku.test_is_correct" />
+        <item itemvalue="Python tests.Python tests for test_sudoku.test_is_solved" />
       </list>
     </recent_temporary>
   </component>
