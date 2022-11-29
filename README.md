@@ -64,4 +64,4 @@ the result will be printed using a 3x3 grid format:
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details
 
-![example workflow](https://github.com/NikGor/sudoku/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/NikGor/sudoku/.github/workflows/main.yml/badge.svg)
