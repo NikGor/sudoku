@@ -7,11 +7,12 @@ This is a simple sudoku solver written in _python_. It uses a _backtracking algo
 To use the solver, simply run the following command:
 
 ```bash
-python3 sudoku.py
+sudoku filename
 ```
 
-The program will prompt you to enter the sudoku puzzle. 
-The puzzle should be entered as a single line of 81 characters, with '*' representing an empty cell. 
+where `filename` is the name of the file containing the sudoku puzzle. The file should be a text file with the following format:
+
+The puzzle should be entered as 81 characters, with '*' representing an empty cell. 
 divided into 9 rows of 9 characters each.
 For example, the following puzzle:
 
@@ -56,7 +57,7 @@ the result will be printed using a 3x3 grid format:
 
 ## Demo
 
-[![asciicast](https://asciinema.org/a/W08IQQ9Ty4mLNJXBmqbYTiBuj.svg)](https://asciinema.org/a/W08IQQ9Ty4mLNJXBmqbYTiBuj)
+[![asciicast](https://asciinema.org/a/VK7EcC6sKUNtaVCBua9TOop7L.svg)](https://asciinema.org/a/VK7EcC6sKUNtaVCBua9TOop7L)
 
 
 ## License
