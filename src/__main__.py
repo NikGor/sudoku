@@ -17,6 +17,7 @@ def solve(puzzle):
 def display(puzzle):
     smart_print(puzzle)  # print
 
+
 @timing
 def run():
     args = parse_args()  # parse the arguments
