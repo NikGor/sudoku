@@ -1,4 +1,4 @@
-from src.tools import *
+from src.tools import count_possible_values
 
 COLOURS = {0: '\033[0m', 1: '\033[32m', 2: '\033[33m', 3: '\033[31m', 4: '\033[0m', 5: '\033[0m', 6: '\033[0m',
            7: '\033[0m', 8: '\033[0m', 9: '\033[0m'}  # colours for the possible values

@@ -1,0 +1,5 @@
+#!/home/runner/sudoku/venv/bin/python
+from src.scripts.solve import main
+
+if __name__ == '__main__':
+    main()
