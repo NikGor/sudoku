@@ -5,10 +5,10 @@ test:
 	poetry run pytest
 
 test-coverage:
-	poetry run pytest --cov=hexlet_python_package --cov-report xml
+	poetry run pytest --cov
 
 lint:
-	poetry run flake8 hexlet_python_package
+	poetry run flake8
 
 build:
 	poetry build
@@ -16,5 +16,4 @@ build:
 package-install:
 	python3 -m pip install --user dist/*.whl --force-reinstall
 
-test-coverage:
-	poetry run pytest --cov
+
