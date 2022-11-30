@@ -1,5 +1,5 @@
 #!/home/runner/sudoku/venv/bin/python
-from src.scripts.sudoku import main
+from src.scripts.display import main
 
 if __name__ == '__main__':
     main()
