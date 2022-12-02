@@ -10,3 +10,7 @@ coverage.xml
 .vim
 src/load_image.py
 .idea/
+venv/
+.replit
+replit.nix
+.idea/
