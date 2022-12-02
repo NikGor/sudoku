@@ -3,7 +3,7 @@ from src.__main__ import run  # import the function to print the sudoku
 
 
 def main():
-  run()
+    run()
 
 
 if __name__ == '__main__':
