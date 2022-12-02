@@ -22,9 +22,19 @@ def display(puzzle):
 def run():
     args = parse_args()  # parse the arguments
     with open(normalize_file_name(args.file)) as f:  # open the file with the sudoku
-      puzzle = [list(line.strip()) for line in f.readlines()]
-    solve(puzzle)
-    # if args.solve:
-    #   solve(puzzle)
-    # if args.show:
-    #   display(puzzle)
+        puzzle = [list(line.strip()) for line in f.readlines()]
+    # solve(puzzle)
+    if args.solve:
+        solve(puzzle)
+    elif args.display:
+        display(puzzle)
+    else:
+        print('No action specified. Use --solve or --display.')
+
+
+def main():
+    run()  # run the main function
+
+
+if __name__ == '__main__':
+    main()  # run the main function
