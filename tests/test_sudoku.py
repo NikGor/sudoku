@@ -1,8 +1,9 @@
 import pytest
 import os
-from src.solve import solve_sudoku, is_solved
 from collections import Counter
-from src.tools import get_quadrant, normalize_file_name
+from src.checks import is_solved
+from src.solve import solve_sudoku
+from src.tools import normalize_file_name, get_quadrant
 
 
 @pytest.fixture

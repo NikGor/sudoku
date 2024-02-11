@@ -8,9 +8,9 @@ venv/
 coverage.xml
 .pytest_cache/
 .vim
-src/load_image.py
 .idea/
 venv/
 .replit
 replit.nix
 .idea/
+.coverage

@@ -1,5 +1,4 @@
-from src.tools import get_possible_values, find_the_best_cell
-from src.checks import is_solved
+from src.tools import is_solved, get_possible_values, find_the_best_cell
 
 
 def solve_sudoku(puzzle):

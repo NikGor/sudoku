@@ -15,3 +15,8 @@ build:
 
 package-install:
 	python3 -m pip install dist/*.whl --force-reinstall
+
+amend-and-push:
+	git add .
+	git commit --amend --no-edit
+	git push --force

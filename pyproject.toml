@@ -9,8 +9,20 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.9,<4.0"
 pytest-cov = "^4.0.0"
+pytest = "^7.2.0"
+coverage = "^6.5.0"
+flake8 = "^6.0.0"
+pyyaml = "^6.0"
+ipykernel = "^6.17.1"
+opencv-python = "^4.9.0.80"
+numpy = "^1.26.4"
+pytesseract = "^0.3.10"
+pillow = "^10.2.0"
+gunicorn = "^21.2.0"
+flask = "^3.0.2"
+bootstrap4 = "^0.1.0"
 
 
 [build-system]
